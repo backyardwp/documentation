@@ -5,8 +5,8 @@ use Illuminate\Support\Str;
 return array(
 	'baseUrl'            => '',
 	'production'         => false,
-	'siteName'           => 'Backyard for WordPress',
-	'siteDescription'    => 'A modern way of building WordPress plugins.',
+	'siteName'           => 'Backyard Framework for WordPress',
+	'siteDescription'    => 'Backyard is a modern framework designed to be a solid foundation for your WordPress plugins.',
 
 	// Algolia DocSearch credentials
 	'docsearchApiKey'    => '',
