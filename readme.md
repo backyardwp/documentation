@@ -2,7 +2,7 @@
 <br />
 <p align="center">
   <a href="https://backyard.sematico.com">
-    <img src=".github/backyard-logo-web.svg" alt="Logo" width="80" height="80">
+    <img src="https://raw.githubusercontent.com/backyardwp/assets/master/backyard-logo.svg" alt="Logo" width="80" height="80">
   </a>
 
   <h3 align="center">Backyard for WordPress</h3>
