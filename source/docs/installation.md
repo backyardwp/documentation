@@ -22,7 +22,7 @@ The framework uses Composer to manage its dependencies. Please follow [the docum
 Navigate to the folder where you wish to create a WordPress plugin and through your terminal run the following command:
 
 ```bash
-composer require backyard/framework
+composer require backyardwp/framework
 ```
 
 This will install the framework and the dependencies.
