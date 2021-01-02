@@ -89,7 +89,7 @@ File: `config/plugin.php`
 ```php
 <?php
 
-return [
+$config = [
 	'my_key' => 'my_value',
 ];
 ```
