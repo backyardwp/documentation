@@ -19,6 +19,7 @@ return array(
 	),
 	'WordPress'         => array(
 		'children' => array(
+			'Admin Pages' => 'docs/admin-pages',
 			'Nonces'    => 'docs/nonces',
 			'Cache'     => 'docs/cache',
 			'Redirects' => 'docs/redirects',

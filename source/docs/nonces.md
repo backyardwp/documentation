@@ -49,7 +49,7 @@ In your form's html:
 Use the `url()` method of the `Nonce` class to generate nonce urls. The method requires the url to which the nonce will be attached as query parameter.
 
 ```php
-$url = ( new Nonce( $slug ) )->url( admin_ur() );
+$url = ( new Nonce( $slug ) )->url( admin_url() );
 ```
 
 <hr>
