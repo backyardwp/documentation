@@ -35,6 +35,7 @@ return array(
 			'Request Factory' => 'docs/request-factory',
 			'Singleton'       => 'docs/singleton',
 			'String helpers'  => 'docs/str',
+			'Dom Attributes' => 'docs/dom-attributes',
 		),
 	),
 );
