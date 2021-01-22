@@ -13,6 +13,7 @@ section: content
 - **Added**: Dom attributes generator
 - **Added**: Parameter Bag class
 - **Added**: Sanitizer helper
+- **Added**: Arr helper
 - **Tweaked**: RequestsFactory class no longer uses Symfony HTTP Foundation package
 - **Tweaked**: RequestsFactory now uses the laminas-diactoros package
 - **Tweaked**: RequestsFactory makes use of the Parameter Bag class

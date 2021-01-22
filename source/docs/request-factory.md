@@ -5,11 +5,11 @@ extends: _layouts.documentation
 section: content
 ---
 
-## HTTP Foundation
+## Laminas Diactoros
 
-Backyard uses the [Symfony HTTP Foundation](https://symfony.com/doc/current/components/http_foundation.html) package when working with HTTP requests. The package, defines an object-oriented layer for the HTTP specification.
+Backyard uses the [laminas-diactoros](https://docs.laminas.dev/laminas-diactoros/) package when working with HTTP requests.
 
-For more information about the package, please refer to the [official documentation](https://symfony.com/doc/current/components/http_foundation.html).
+For more information about the package, please refer to the [official documentation](https://docs.laminas.dev/laminas-diactoros/).
 
 <hr>
 
@@ -25,4 +25,24 @@ use Backyard\Utils\RequestFactory;
 $request = RequestFactory::create();
 ```
 
-The `create` method returns a configured instance of `Symfony\Component\HttpFoundation\Request`.
+The `create` method returns a configured instance of the `Laminas\Diactoros\ServerRequest` class.
+
+<hr>
+
+### $_POST Parameter Bag
+
+You may use the `getPostedData` method to capture $_POST data. Captured data is then returned inside a [parameter bag](docs/parameter-bag/).
+
+```php
+$posted = RequestFactory::getPostedData(); // $posted is now a ParameterBag
+```
+
+<hr>
+
+### $_GET Parameter Bag
+
+You may use the `getQueryParams` method to capture $_GET data. Captured data is then returned inside a [parameter bag](docs/parameter-bag/).
+
+```php
+$params = RequestFactory::getQueryParams(); // $posted is now a ParameterBag
+```
