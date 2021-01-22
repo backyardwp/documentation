@@ -36,6 +36,7 @@ return array(
 			'Singleton'       => 'docs/singleton',
 			'String helpers'  => 'docs/str',
 			'Dom Attributes' => 'docs/dom-attributes',
+			'Parameter Bag' => 'docs/parameter-bag',
 		),
 	),
 );
