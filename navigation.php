@@ -25,9 +25,17 @@ return array(
 			'Redirects' => 'docs/redirects',
 		),
 	),
-	'Views & Templates' => array(
+	'Plugin templates' => array(
 		'children' => array(
-			'Twig' => 'docs/twig',
+			'Engine introduction' => 'docs/templates',
+			'Engine setup' => 'docs/templates-setup',
+			'Engine extensions' => 'docs/templates-engine-extensions',
+			'File extensions' => 'docs/templates-file-extensions',
+			'Templates folders' => 'docs/templates-folders',
+			'Template data' => 'docs/template-data',
+			'Template functions' => 'docs/template-functions',
+			'Templates nesting' => 'docs/templates-nesting',
+			'Layouts' => 'docs/template-layouts',
 		),
 	),
 	'Utilities'         => array(
