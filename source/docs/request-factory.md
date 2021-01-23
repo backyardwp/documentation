@@ -31,7 +31,7 @@ The `create` method returns a configured instance of the `Laminas\Diactoros\Serv
 
 ### $_POST Parameter Bag
 
-You may use the `getPostedData` method to capture $_POST data. Captured data is then returned inside a [parameter bag](docs/parameter-bag/).
+You may use the `getPostedData` method to capture data from the `$_POST` super global variable. Captured data is then returned inside a [parameter bag](docs/parameter-bag/).
 
 ```php
 $posted = RequestFactory::getPostedData(); // $posted is now a ParameterBag
@@ -41,7 +41,7 @@ $posted = RequestFactory::getPostedData(); // $posted is now a ParameterBag
 
 ### $_GET Parameter Bag
 
-You may use the `getQueryParams` method to capture $_GET data. Captured data is then returned inside a [parameter bag](docs/parameter-bag/).
+You may use the `getQueryParams` method to capture data from the `$_GET` super global variable. Captured data is then returned inside a [parameter bag](docs/parameter-bag/).
 
 ```php
 $params = RequestFactory::getQueryParams(); // $posted is now a ParameterBag
