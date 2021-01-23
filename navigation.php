@@ -35,6 +35,7 @@ return array(
 			'Request Factory' => 'docs/request-factory',
 			'Singleton'       => 'docs/singleton',
 			'String helpers'  => 'docs/str',
+			'Array helpers' => 'docs/arr',
 			'Dom Attributes' => 'docs/dom-attributes',
 			'Parameter Bag' => 'docs/parameter-bag',
 			'Sanitizer' => 'docs/sanitizer',

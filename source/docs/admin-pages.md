@@ -35,11 +35,11 @@ Each page must call the `register` method once the page has been configured. The
 
 ### Submenu pages
 
-Submenu pages can be created by using the `Backyard\AdminPages\SubMenuPage` class. The class shares the same chainable methods as the `MenuPage` class. Additional methods are avilable to properly configure the submenu page.
+Submenu pages can be created by using the `Backyard\AdminPages\SubMenuPage` class. The class shares the same chainable methods as the `MenuPage` class. Additional methods are available to properly configure the submenu page.
 
 #### Example submenu page
 
-The following example registers a page under the "Settings" menu of the WordPress dashboard. Notice the `setParentSlug` method being used.
+The following example registers a page under the "Settings" menu of the WordPress dashboard. See the `setParentSlug` method being used.
 
 ```php
 $mySubMenuPage = new SubMenuPage();
