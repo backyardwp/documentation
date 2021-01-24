@@ -29,6 +29,18 @@ The `create` method returns a configured instance of the `Laminas\Diactoros\Serv
 
 <hr>
 
+### Requests service provider
+
+The framework provides a requests service provider. When used, a `request` method becomes available from the main plugin instance. The method returns a configured instance of the `Laminas\Diactoros\ServerRequest` class just like when using the `create` method mentioned above.
+
+From your plugin's entry file, use the `addServiceProvider()` method of the `Plugin` class to register the templates service provider.
+
+```php
+$myPlugin->addServiceProvider( Backyard\Requests\RequestsServiceProvider::class );
+```
+
+<hr>
+
 ### $_POST Parameter Bag
 
 You may use the `getPostedData` method to capture data from the `$_POST` super global variable. Captured data is then returned inside a [parameter bag](docs/parameter-bag/).
