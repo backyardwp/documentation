@@ -35,7 +35,9 @@ return array(
 			'Template data' => 'docs/template-data',
 			'Template functions' => 'docs/template-functions',
 			'Templates nesting' => 'docs/templates-nesting',
-			'Layouts' => 'docs/template-layouts',
+			'Layouts definition' => 'docs/template-layouts',
+			'Sections setup' => 'docs/template-sections',
+			'Templates inheritance' => 'docs/templates-inheritance',
 		),
 	),
 	'Utilities'         => array(
