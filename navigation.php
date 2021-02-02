@@ -25,6 +25,11 @@ return array(
 			'Redirects' => 'docs/redirects',
 		),
 	),
+	'Forms'         => array(
+		'children' => array(
+			'Forms introduction' => 'docs/forms',
+		),
+	),
 	'Plugin templates' => array(
 		'children' => array(
 			'Engine introduction' => 'docs/templates',
