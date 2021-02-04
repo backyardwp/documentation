@@ -28,6 +28,7 @@ return array(
 	'Forms'         => array(
 		'children' => array(
 			'Forms introduction' => 'docs/forms',
+			'Fields configuration' => 'docs/form-fields-configuration',
 		),
 	),
 	'Plugin templates' => array(
