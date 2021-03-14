@@ -9,13 +9,11 @@ section: content
 
 Backyard comes with a powerful forms builder powered by the [Laminas form](https://docs.laminas.dev/laminas-form/) package.
 
-Built on top of `laminas-form`, Backyard provides additional features such as:
+Built on top of `laminas-form`, Backyard provides additional features such as: **easy form scaffolding**, **nonces verification**, **tabbed forms**, **custom form layouts** & **input sanitization**.
 
-1. Easy form scaffolding
-2. Nonces verification
-3. Tabbed forms
-4. Custom form layouts
-5. Input sanitization
+This section of the documenation will only cover the features provided by the Backyard framework. For more information about the package, please refer to the [official documentation](https://docs.laminas.dev/laminas-form/).
+
+<hr>
 
 ### Simple example
 
