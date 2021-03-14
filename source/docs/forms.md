@@ -33,7 +33,6 @@ class MyForm extends Form {
             array(
                 'type'    => Email::class,
                 'name'    => 'email',
-                'test'    => 'hello',
                 'options' => array(
                     'label' => 'Your email address',
                     'hint'  => 'Here goes the description',
@@ -62,4 +61,71 @@ $form = new MyForm( 'nonce_name' );
 
 // Somewhere in your plugin
 $form->render();
+```
+
+<hr>
+
+### Nonce configuration
+
+All forms use [nonces](https://codex.wordpress.org/WordPress_Nonces) to validate requests. To setup the nonce for a form, specify it's name when instantiating the form.
+
+```php
+$form = new MyForm( 'nonce_name' );
+
+// Somewhere in your plugin
+$form->render();
+```
+
+The nonce is then automatically verified when submitting the form.
+
+<hr>
+
+### Processing submissions
+
+Data submitted through the form can be handled by using the `processSubmission` method.
+
+The method provides access to the `$values` and `$request` parameters that you can use to process the submission.
+
+This method is triggered only after all fields validation rules have been validated, including the automatically generated nonce.
+
+#### Submitted values
+
+The `$values` variable is an instance of the `ParameterBag` [class](/docs/parameter-bag/). It contains all the **validated and sanitized** values submitted through the form.
+
+
+```php
+public function processSubmission( ParameterBag $values, ServerRequest $request )
+{
+	// Here you process the submitted data.
+	$email = $values->get( 'email' );
+}
+```
+
+#### The request
+
+By default when using the `Form` class, all submissions are captured via the `init` [hook](https://developer.wordpress.org/reference/hooks/init/). Should you need to change the hook, you can do so by specifying the hook via the `HOOK` constant.
+
+```php
+use Backyard\Forms\Form;
+
+class MyForm extends Form {
+
+	/**
+	 * @inheritdoc
+	 */
+	const HOOK = 'my_hook';
+
+}
+```
+
+In the example above, the request will be captured through the `my_hook` hook.
+
+If you're building a form that's used in the admin panel, it's highly recommended you use the `admin_init` hook. For the sake of simplicity, a pre-configured `AdminForm` class is included with the framework.
+
+```php
+use Backyard\Forms\AdminForm;
+
+class MyForm extends AdminForm {
+	// configure your form
+}
 ```

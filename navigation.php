@@ -29,6 +29,8 @@ return array(
 		'children' => array(
 			'Forms introduction' => 'docs/forms',
 			'Fields configuration' => 'docs/form-fields-configuration',
+			'Input sanitization' => 'docs/form-sanitization',
+			'Validation rules' => 'docs/form-validation-rules',
 		),
 	),
 	'Plugin templates' => array(
